@@ -1,0 +1,82 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Queueing System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container" id="servicePage">
+
+    <h1>	
+GAME TOP-UP QUEUE</h1>
+    <p class="subtitle">	
+GAME TOP-UP QUEUE</p>
+
+
+    <div class="box">
+
+        <h2>Select Your Game</h2>
+        <p>Choose the Recharge Item you need.</p>
+
+        <p id="errorMessage"></p>
+
+        <div class="services">
+
+            <button class="service-btn" data-service="Mobile Legends: Bang Bang">
+             Mobile Legends (MLBB)
+            </button>
+
+            <button class="service-btn" data-service="Call of Duty: Mobile">
+            Call of Duty Mobile (CODM)
+            </button>
+
+            <button class="service-btn" data-service="PUBG Mobile">
+             PUBG Mobile
+            </button>
+
+            <button class="service-btn" data-service="Honor of Kings">
+            Honor of Kings
+            </button>
+
+        </div>
+
+        <button class="get-btn" onclick="getNumber()">
+            GET QUEUE NUMBER
+        </button>
+
+    </div>
+
+</div>
+
+<div class="container hidden" id="ticketPage">
+
+    <h1>QUEUE FOR YOUR RECHARGE</h1>
+    <p class="subtitle">Your queue number has been generated!</p>
+
+    <div class="box serving-box">
+        <h3>YOUR QUEUE NUMBER</h3>
+        <div class="number" id="myNumber">---</div>
+    </div>
+
+    <div class="box">
+        <h3>SELECTED SERVICE</h3>
+        <p id="myService">---</p>
+
+        <h3>QUEUE STATUS</h3>
+        <div class="status waiting" id="myStatus">Waiting</div>
+
+        <p id="message">Please wait for your number to be says finished so that you cna confirm if your recharge is done.</p>
+    </div>
+
+    <button class="get-btn" onclick="showServices()">
+        BACK
+    </button>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>

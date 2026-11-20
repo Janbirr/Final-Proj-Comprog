@@ -1,0 +1,44 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Queue Ticket</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <h1>YOUR QUEUE TICKET</h1>
+    <p class="subtitle">Your number has been generated!</p>
+
+    <div class="box serving-box">
+        <h3>YOUR QUEUE NUMBER</h3>
+        <div class="number" id="myNumber">---</div>
+    </div>
+
+    <div class="box">
+
+        <h3>SELECTED SERVICE</h3>
+        <p id="myService">---</p>
+
+        <h3>QUEUE STATUS</h3>
+        <div class="status waiting" id="myStatus">Waiting</div>
+
+        <p id="message">Please wait for your number to be called.</p>
+
+    </div>
+
+    <button class="get-btn" onclick="location.href='services.html'">
+        GET ANOTHER QUEUE NUMBER
+    </button>
+
+    <button class="back-btn" onclick="location.href='index.html'">
+        BACK TO HOME
+    </button>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
